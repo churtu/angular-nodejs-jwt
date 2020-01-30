@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="card text-white bg-success mb-3 mx-auto animated fadeInDown" style="max-width: 18rem;" *ngFor="let task of tasks">
+    <div class="card-header">{{format(task.createdAt)}}</div>
+    <div class="card-body">
+      <h5 class="card-title">{{task.name}}</h5>
+      <p class="card-text">{{task.description}}</p>
+    </div>
+  </div>
+</div>
